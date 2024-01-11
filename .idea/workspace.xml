@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b5c8e928-5e40-48b0-9191-6a6f84f3cc10" name="Changes" comment="weather-collector is added">
+      <change afterPath="$PROJECT_DIR$/weather-collector/src/main/java/org/example/weathercollector/config/ParserConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-collector/src/test/java/org/example/weathercollector/config/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-collector/src/test/java/org/example/weathercollector/service/WeatherPublisherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-collector/src/main/java/org/example/weathercollector/WeatherCollectorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-collector/src/main/java/org/example/weathercollector/WeatherCollectorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-collector/src/main/java/org/example/weathercollector/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-collector/src/main/java/org/example/weathercollector/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-collector/src/main/java/org/example/weathercollector/service/WeatherParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-collector/src/main/java/org/example/weathercollector/service/WeatherParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-collector/src/main/java/org/example/weathercollector/service/WeatherPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-collector/src/main/java/org/example/weathercollector/service/WeatherPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-collector/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/weather-collector/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-collector/src/test/java/org/example/weathercollector/service/WeatherParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-collector/src/test/java/org/example/weathercollector/service/WeatherParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-collector/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/weather-collector/src/test/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="eureka-server" />
+      </map>
+    </option>
+    <option name="RECENT_COMMON_BRANCH" value="master" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2akl2mCGtr95pXy8vqbb9PaBqvY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.WeatherCollectorApplication.executor": "Run",
+    "JUnit.All in weather-collector.executor": "Coverage",
+    "JUnit.WeatherParserTest.executor": "Run",
+    "JUnit.WeatherParserTest.testGetLocations.executor": "Run",
+    "JUnit.WeatherParserTest.testParseOk.executor": "Debug",
+    "JUnit.WeatherParserTest.testParseWeatherForDayByLocation.executor": "Run",
+    "JUnit.WeatherParserTest.testParseWeatherForDayByLocationNotFound.executor": "Run",
+    "JUnit.WeatherParserTest.testParseWeatherForDayByLocationOk.executor": "Run",
+    "JUnit.WeatherPublisherTest.executor": "Run",
+    "JUnit.WeatherPublisherTest.testPublish.executor": "Run",
+    "Maven.spring-cloud-weather-forecasting [clean].executor": "Run",
+    "Maven.weather-collector [clean].executor": "Run",
+    "Maven.weather-collector [compile].executor": "Run",
+    "Maven.weather-collector [validate].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.ConfigServerApplication.executor": "Run",
+    "Spring Boot.EurekaServerApplication.executor": "Run",
+    "Spring Boot.WeatherCollectorApplication.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-18",
+    "last_opened_file_path": "D:/Java/projects/test-tasks/library-spring-rest-artemis",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3127875",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "Errors",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.weathercollector.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\weather-collector\src\test" />
+      <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\config-repo\api-gateway" />
+      <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\config-repo\common" />
+      <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\config-repo\eserver" />
+      <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\config-repo" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.weathercollector.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.WeatherCollectorApplication">
+    <configuration name="All in weather-collector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="weather-collector" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherParserTest.testGetLocations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="weather-collector" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.weathercollector.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.weathercollector.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.weathercollector.service.WeatherParserTest" />
+      <option name="METHOD_NAME" value="testGetLocations" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherParserTest.testParseWeatherForDayByLocation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="weather-collector" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.weathercollector.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.weathercollector.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.weathercollector.service.WeatherParserTest" />
+      <option name="METHOD_NAME" value="testParseWeatherForDayByLocation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherPublisherTest.testPublish" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="weather-collector" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.weathercollector.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.weathercollector.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.weathercollector.service.WeatherPublisherTest" />
+      <option name="METHOD_NAME" value="testPublish" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.configserver.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherCollectorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="weather-collector" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.weathercollector.WeatherCollectorApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.weathercollector.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.WeatherCollectorApplication" />
+        <item itemvalue="JUnit.All in weather-collector" />
+        <item itemvalue="JUnit.WeatherParserTest.testGetLocations" />
+        <item itemvalue="JUnit.WeatherParserTest.testParseWeatherForDayByLocation" />
+        <item itemvalue="JUnit.WeatherPublisherTest.testPublish" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-18.0.2-azul-18.0.2.1-f644763e9732-d6bd9cf6" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5c8e928-5e40-48b0-9191-6a6f84f3cc10" name="Changes" comment="" />
+      <created>1704870256612</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704870256612</updated>
+      <workItem from="1704870258785" duration="1388000" />
+      <workItem from="1704871704159" duration="1935000" />
+      <workItem from="1704873648367" duration="1013000" />
+      <workItem from="1704886103777" duration="1912000" />
+      <workItem from="1704888028986" duration="468000" />
+      <workItem from="1704888541919" duration="913000" />
+      <workItem from="1704889461699" duration="54000" />
+      <workItem from="1704889552371" duration="546000" />
+      <workItem from="1704890106257" duration="1351000" />
+      <workItem from="1704956327128" duration="4913000" />
+      <workItem from="1704971805252" duration="5878000" />
+      <workItem from="1705042728693" duration="5837000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1704870455413</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704870455413</updated>
+    </task>
+    <task id="LOCAL-00002" summary="eureka-server is added">
+      <option name="closed" value="true" />
+      <created>1704871238736</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704871238736</updated>
+    </task>
+    <task id="LOCAL-00003" summary="config-server is added">
+      <option name="closed" value="true" />
+      <created>1704873499398</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704873499398</updated>
+    </task>
+    <task id="LOCAL-00004" summary="eureka-server is added">
+      <option name="closed" value="true" />
+      <created>1704874416725</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704874416725</updated>
+    </task>
+    <task id="LOCAL-00005" summary="api-gateway is added">
+      <option name="closed" value="true" />
+      <created>1704887569087</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704887569087</updated>
+    </task>
+    <task id="LOCAL-00006" summary="weather-collector is added">
+      <option name="closed" value="true" />
+      <created>1704977670910</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704977670910</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init" />
+    <MESSAGE value="config-server is added" />
+    <MESSAGE value="eureka-server is added" />
+    <MESSAGE value="api-gateway is added" />
+    <MESSAGE value="weather-collector is added" />
+    <option name="LAST_COMMIT_MESSAGE" value="weather-collector is added" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/spring_cloud_weather_forecasting$All_in_weather_collector.ic" NAME="All in weather-collector Coverage Results" MODIFIED="1705048160810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
