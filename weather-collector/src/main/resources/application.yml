@@ -1,23 +1,5 @@
-server:
-  port: 8080 # temporary
-
 spring:
   application:
     name: weather-collector
-  kafka:
-    bootstrap-servers: localhost:9092
-    consumer:
-      group-id: app.1
-    weather-topic: "weather-topic"
-
-eureka:
-  instance:
-    instance-id: ${spring.application.name}:${random.uuid}
-
-parser:
-  URL: http://api.weatherapi.com/v1/current.json
-  api-key: b6a96bd2df114df1bdb73050241101
-  scheduled:
-    enabled: true
-    fixedRate:
-      milliseconds: 60000 # a minute
+  config:
+    import: configserver:http://localhost:8888

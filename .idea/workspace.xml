@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5c8e928-5e40-48b0-9191-6a6f84f3cc10" name="Changes" comment="weather-collector is added">
-      <change afterPath="$PROJECT_DIR$/weather-collector/src/main/java/org/example/weathercollector/config/ParserConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-collector/src/test/java/org/example/weathercollector/config/KafkaProducerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-collector/src/test/java/org/example/weathercollector/service/WeatherPublisherTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-collector/src/main/java/org/example/weathercollector/WeatherCollectorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-collector/src/main/java/org/example/weathercollector/WeatherCollectorApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-collector/src/main/java/org/example/weathercollector/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-collector/src/main/java/org/example/weathercollector/model/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-collector/src/main/java/org/example/weathercollector/service/WeatherParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-collector/src/main/java/org/example/weathercollector/service/WeatherParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-collector/src/main/java/org/example/weathercollector/service/WeatherPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-collector/src/main/java/org/example/weathercollector/service/WeatherPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-collector/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weather-collector/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-collector/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/weather-collector/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-collector/src/test/java/org/example/weathercollector/service/WeatherParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-collector/src/test/java/org/example/weathercollector/service/WeatherParserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-collector/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/weather-collector/src/test/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +77,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.ApiGatewayApplication.executor": "Run",
     "Spring Boot.ConfigServerApplication.executor": "Run",
     "Spring Boot.EurekaServerApplication.executor": "Run",
@@ -92,7 +86,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-18",
-    "last_opened_file_path": "D:/Java/projects/test-tasks/library-spring-rest-artemis",
+    "last_opened_file_path": "D:/Java/projects/microservices/spring-cloud-weather-forecasting/config-repo/weather-collector",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -114,11 +108,11 @@
       <recent name="org.example.weathercollector.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\config-repo\weather-collector" />
       <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\weather-collector\src\test" />
       <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\config-repo\api-gateway" />
       <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\config-repo\common" />
       <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\config-repo\eserver" />
-      <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\config-repo" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -127,7 +121,7 @@
       <recent name="org.example.weathercollector.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.WeatherCollectorApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
     <configuration name="All in weather-collector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="weather-collector" />
       <option name="PACKAGE_NAME" value="" />
@@ -254,7 +248,8 @@
       <workItem from="1704890106257" duration="1351000" />
       <workItem from="1704956327128" duration="4913000" />
       <workItem from="1704971805252" duration="5878000" />
-      <workItem from="1705042728693" duration="5837000" />
+      <workItem from="1705042728693" duration="5929000" />
+      <workItem from="1705059319996" duration="1222000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -304,7 +299,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704977670910</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="weather-collector is added">
+      <option name="closed" value="true" />
+      <created>1705048657786</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705048657786</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
