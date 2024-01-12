@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: weather-collector
+  config:
+    import: configserver:http://localhost:8888

@@ -1,0 +1,15 @@
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+spring:
+  kafka:
+    weather-topic: "test-weather-topic"
+
+parser:
+  URL: http://localhost
+  api-key: test-key
+  scheduled:
+    fixedRate:
+      milliseconds: 60000 # a minute
