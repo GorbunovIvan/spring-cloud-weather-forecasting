@@ -14,6 +14,7 @@
         <module>config-server</module>
         <module>api-gateway</module>
         <module>weather-collector</module>
+        <module>data-consumer-to-db</module>
     </modules>
 
     <properties>
