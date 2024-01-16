@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: data-rest
+  config:
+    import: configserver:http://localhost:8888
