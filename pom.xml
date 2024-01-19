@@ -15,6 +15,7 @@
         <module>api-gateway</module>
         <module>weather-collector</module>
         <module>data-consumer-to-db</module>
+        <module>data-rest</module>
     </modules>
 
     <properties>
