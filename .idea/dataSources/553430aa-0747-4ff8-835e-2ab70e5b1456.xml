@@ -3,9 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.51">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>9668</IntrospectionStateNumber>
+      <IntrospectionStateNumber>9684</IntrospectionStateNumber>
       <ServerVersion>14.5</ServerVersion>
-      <StartupTime>1705239216</StartupTime>
+      <StartupTime>1705389395</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -800,7 +800,7 @@ false Zulu
 13388||10|C|G
 13388||-9223372036854775808|U|G
 13388||10|U|G</Grants>
-      <IntrospectionStateNumber>9668</IntrospectionStateNumber>
+      <IntrospectionStateNumber>9684</IntrospectionStateNumber>
       <ObjectId>19645</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4338,8 +4338,8 @@ false Zulu
     <schema id="289" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>9668</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2024-01-15.07:08:54</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>9684</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-01-20.07:32:37</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -4352,7 +4352,15 @@ false Zulu
       <StateNumber>6402</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="291" parent="289" name="weather-for-day_id_seq">
+    <sequence id="291" parent="289" name="users_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>19673</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>9679</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="292" parent="289" name="weather-for-day_id_seq">
       <DasType>bigint|0s</DasType>
       <ObjectId>19655</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
@@ -4360,19 +4368,25 @@ false Zulu
       <StateNumber>6403</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <table id="292" parent="289" name="locations">
+    <table id="293" parent="289" name="locations">
       <ObjectId>19647</ObjectId>
       <StateNumber>6404</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="293" parent="289" name="weather_for_day">
+    <table id="294" parent="289" name="users">
+      <ObjectId>19674</ObjectId>
+      <StateNumber>9679</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="295" parent="289" name="weather_for_day">
       <ObjectId>19656</ObjectId>
       <StateNumber>9667</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="294" parent="292" name="id">
+    <column id="296" parent="293" name="id">
       <DasType>integer|0s</DasType>
       <DefaultExpression>nextval(&apos;locations_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -4381,25 +4395,25 @@ false Zulu
       <SequenceId>19646</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="295" parent="292" name="country">
+    <column id="297" parent="293" name="country">
       <DasType>varchar(255)|0s</DasType>
       <Position>2</Position>
       <StateNumber>6402</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="296" parent="292" name="name">
+    <column id="298" parent="293" name="name">
       <DasType>varchar(255)|0s</DasType>
       <Position>3</Position>
       <StateNumber>6402</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="297" parent="292" name="region">
+    <column id="299" parent="293" name="region">
       <DasType>varchar(255)|0s</DasType>
       <Position>4</Position>
       <StateNumber>6402</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="298" parent="292" name="locations_pkey">
+    <index id="300" parent="293" name="locations_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>19653</ObjectId>
@@ -4408,7 +4422,7 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="299" parent="292" name="ukjv0vvu3hh6cwl8dsb6y6l4o83">
+    <index id="301" parent="293" name="ukjv0vvu3hh6cwl8dsb6y6l4o83">
       <ColNames>name
 region
 country</ColNames>
@@ -4426,19 +4440,91 @@ pg_catalog</CollationParentNames>
 100
 100</CollationIds>
     </index>
-    <key id="300" parent="292" name="locations_pkey">
+    <key id="302" parent="293" name="locations_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>19654</ObjectId>
       <Primary>1</Primary>
       <StateNumber>6402</StateNumber>
       <UnderlyingIndexId>19653</UnderlyingIndexId>
     </key>
-    <key id="301" parent="292" name="ukjv0vvu3hh6cwl8dsb6y6l4o83">
+    <key id="303" parent="293" name="ukjv0vvu3hh6cwl8dsb6y6l4o83">
       <ObjectId>19670</ObjectId>
       <StateNumber>6971</StateNumber>
       <UnderlyingIndexId>19669</UnderlyingIndexId>
     </key>
-    <column id="302" parent="293" name="id">
+    <check id="304" parent="294" name="users_role_check">
+      <ColNames>role</ColNames>
+      <ObjectId>19678</ObjectId>
+      <Predicate>(role)::text = &apos;USER&apos;::text</Predicate>
+      <StateNumber>9679</StateNumber>
+    </check>
+    <column id="305" parent="294" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>9679</StateNumber>
+      <SequenceId>19673</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="306" parent="294" name="is_active">
+      <DasType>boolean|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>9679</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="307" parent="294" name="password">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>9679</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="308" parent="294" name="role">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>9679</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="309" parent="294" name="username">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>9679</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="310" parent="294" name="users_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>19681</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>9679</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="311" parent="294" name="uk_r43af9ap4edm43mmtq01oddj6">
+      <ColNames>username</ColNames>
+      <ObjectId>19683</ObjectId>
+      <StateNumber>9681</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="312" parent="294" name="users_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>19682</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>9679</StateNumber>
+      <UnderlyingIndexId>19681</UnderlyingIndexId>
+    </key>
+    <key id="313" parent="294" name="uk_r43af9ap4edm43mmtq01oddj6">
+      <ObjectId>19684</ObjectId>
+      <StateNumber>9681</StateNumber>
+      <UnderlyingIndexId>19683</UnderlyingIndexId>
+    </key>
+    <column id="314" parent="295" name="id">
       <DasType>bigint|0s</DasType>
       <DefaultExpression>nextval(&apos;&quot;weather-for-day_id_seq&quot;&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -4447,41 +4533,40 @@ pg_catalog</CollationParentNames>
       <SequenceId>19655</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="303" parent="293" name="date_recorded">
+    <column id="315" parent="295" name="date_recorded">
       <DasType>date|0s</DasType>
       <Position>2</Position>
       <StateNumber>9663</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="304" parent="293" name="temp_c">
+    <column id="316" parent="295" name="temp_c">
       <DasType>double precision|0s</DasType>
       <Position>3</Position>
       <StateNumber>6403</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="305" parent="293" name="location_id">
+    <column id="317" parent="295" name="location_id">
       <DasType>integer|0s</DasType>
       <Position>4</Position>
       <StateNumber>6403</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="306" parent="293" name="fkrv66afrmm22kx7qv31ek1j1fx">
+    <foreign-key id="318" parent="295" name="fkrv66afrmm22kx7qv31ek1j1fx">
       <ColNames>location_id</ColNames>
       <ObjectId>19662</ObjectId>
       <StateNumber>6404</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>19647</RefTableId>
     </foreign-key>
-    <index id="307" parent="293" name="weather-for-day_pkey">
+    <index id="319" parent="295" name="weather-for-day_pkey">
       <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
       <ObjectId>19660</ObjectId>
       <Primary>1</Primary>
       <StateNumber>6403</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="308" parent="293" name="uke0qvmkwgnrtt5dc8p369n7jjx">
+    <index id="320" parent="295" name="uke0qvmkwgnrtt5dc8p369n7jjx">
       <ColNames>date_recorded
 location_id</ColNames>
       <ObjectId>19667</ObjectId>
@@ -4489,16 +4574,29 @@ location_id</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="309" parent="293" name="weather-for-day_pkey">
+    <index id="321" parent="295" name="ukt89l5u5cwcs5nql7q8bqe9usj">
+      <ColNames>date_recorded
+location_id</ColNames>
+      <ObjectId>19671</ObjectId>
+      <StateNumber>9670</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="322" parent="295" name="weather-for-day_pkey">
       <ObjectId>19661</ObjectId>
       <Primary>1</Primary>
       <StateNumber>6403</StateNumber>
       <UnderlyingIndexId>19660</UnderlyingIndexId>
     </key>
-    <key id="310" parent="293" name="uke0qvmkwgnrtt5dc8p369n7jjx">
+    <key id="323" parent="295" name="uke0qvmkwgnrtt5dc8p369n7jjx">
       <ObjectId>19668</ObjectId>
       <StateNumber>6407</StateNumber>
       <UnderlyingIndexId>19667</UnderlyingIndexId>
+    </key>
+    <key id="324" parent="295" name="ukt89l5u5cwcs5nql7q8bqe9usj">
+      <ObjectId>19672</ObjectId>
+      <StateNumber>9670</StateNumber>
+      <UnderlyingIndexId>19671</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>

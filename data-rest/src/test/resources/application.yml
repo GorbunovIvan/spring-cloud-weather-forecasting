@@ -4,12 +4,21 @@ spring:
     driver-class-name: org.h2.Driver
     username: sa
     password:
+  cloud:
+    config:
+      enabled: false
 
 eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
     enabled: false
+
+security:
+  jwt:
+    requestHeader: authorization
+    secretKey: mySecretKey-mySecretKey-mySecretKey
+    validity: 3600
 
 forecast:
   rangeOfDaysOfDeviation: 14
