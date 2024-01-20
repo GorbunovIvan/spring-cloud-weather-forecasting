@@ -1,0 +1,14 @@
+eureka:
+  client:
+    enabled: false
+    register-with-eureka: false
+    fetch-registry: false
+
+forecast:
+  remote-service:
+    base-url: http://test-service/weather
+    forecast-url: ${forecast.remote-service.base-url}/forecast
+    auth:
+      url: ${forecast.remote-service.base-url}/auth/login
+      username: test-username
+      password: test-password

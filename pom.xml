@@ -16,6 +16,7 @@
         <module>weather-collector</module>
         <module>data-consumer-to-db</module>
         <module>data-rest</module>
+        <module>frontend</module>
     </modules>
 
     <properties>
