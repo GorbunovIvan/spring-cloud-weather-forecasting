@@ -1,3 +1,519 @@
+GET https://ijhttp-examples.jetbrains.com/headers
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aG9yaXRpZXMiOlsiVVNFUiJdLCJpYXQiOjE3MDU3Mzc3NzcsImV4cCI6MTcwNTc0MTM3N30.69nPxTkQkFPf1HAMyg-gupnx_MGLzhyBSdyhpRrmHDLP25yipKHfUaZWZ4ccY5YH
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T100649.200.json
+
+###
+
+GET http://localhost:8083/api/v1/weather/forecast?location=dover
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Cookie: JSESSIONID=07089BEEDC02C1AC3398C5E3E7A52B6B
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET https://ijhttp-examples.jetbrains.com/headers
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aG9yaXRpZXMiOlsiVVNFUiJdLCJpYXQiOjE3MDU3Mzc3NzcsImV4cCI6MTcwNTc0MTM3N30.69nPxTkQkFPf1HAMyg-gupnx_MGLzhyBSdyhpRrmHDLP25yipKHfUaZWZ4ccY5YH
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T100635.200.json
+
+###
+
+POST https://ijhttp-examples.jetbrains.com/post
+Content-Type: application/json
+Content-Length: 198
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "token": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aG9yaXRpZXMiOlsiVVNFUiJdLCJpYXQiOjE3MDU3Mzc3NzcsImV4cCI6MTcwNTc0MTM3N30.69nPxTkQkFPf1HAMyg-gupnx_MGLzhyBSdyhpRrmHDLP25yipKHfUaZWZ4ccY5YH"
+}
+
+<> 2024-01-20T100629.200.json
+
+###
+
+GET http://localhost:8083/api/v1/weather/forecast?location=dover
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Cookie: JSESSIONID=07089BEEDC02C1AC3398C5E3E7A52B6B
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET https://ijhttp-examples.jetbrains.com/headers
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aG9yaXRpZXMiOlsiVVNFUiJdLCJpYXQiOjE3MDU3Mzc3NzcsImV4cCI6MTcwNTc0MTM3N30.69nPxTkQkFPf1HAMyg-gupnx_MGLzhyBSdyhpRrmHDLP25yipKHfUaZWZ4ccY5YH
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T100518.200.json
+
+###
+
+GET http://localhost:8083/api/v1/weather/forecast?location=sdf
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Cookie: JSESSIONID=07089BEEDC02C1AC3398C5E3E7A52B6B
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:8083/api/v1/weather/forecast?location=dover
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Cookie: JSESSIONID=07089BEEDC02C1AC3398C5E3E7A52B6B
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:8083/api/v1/weather/forecast?location=dover
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Cookie: JSESSIONID=07089BEEDC02C1AC3398C5E3E7A52B6B
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:8083/api/v1/weather/forecast?location=dover
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Cookie: JSESSIONID=07089BEEDC02C1AC3398C5E3E7A52B6B
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:8083/api/v1/weather/forecast?location=dover
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET https://ijhttp-examples.jetbrains.com/headers
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aG9yaXRpZXMiOlsiVVNFUiJdLCJpYXQiOjE3MDU3Mzc3NzcsImV4cCI6MTcwNTc0MTM3N30.69nPxTkQkFPf1HAMyg-gupnx_MGLzhyBSdyhpRrmHDLP25yipKHfUaZWZ4ccY5YH
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T100338.200.json
+
+###
+
+POST http://localhost:8083/api/v1/weather/auth/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+<> 2024-01-20T100328.200.json
+
+###
+
+POST http://localhost:8083/api/v1/weather/auth/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+<> 2024-01-20T100324.200.json
+
+###
+
+GET https://ijhttp-examples.jetbrains.com/headers
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aG9yaXRpZXMiOlsiVVNFUiJdLCJpYXQiOjE3MDU3Mzc3NzcsImV4cCI6MTcwNTc0MTM3N30.69nPxTkQkFPf1HAMyg-gupnx_MGLzhyBSdyhpRrmHDLP25yipKHfUaZWZ4ccY5YH
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T100314.200.json
+
+###
+
+GET https://ijhttp-examples.jetbrains.com/headers
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aG9yaXRpZXMiOlsiVVNFUiJdLCJpYXQiOjE3MDU3Mzc3NzcsImV4cCI6MTcwNTc0MTM3N30.69nPxTkQkFPf1HAMyg-gupnx_MGLzhyBSdyhpRrmHDLP25yipKHfUaZWZ4ccY5YH
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T100307.200.json
+
+###
+
+POST http://localhost:8083/api/v1/weather/auth/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+<> 2024-01-20T100258.200.json
+
+###
+
+GET http://localhost:8083/api/v1/weather/forecast?location=dover
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T095402.200.json
+
+###
+
+GET http://localhost:8083/api/v1/weather/forecast?location=dover
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T095400.200.json
+
+###
+
+GET http://localhost:8083/api/v1/weather/forecast?location=dover
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T095354.200.json
+
+###
+
+POST http://localhost:8083/api/v1/weather/auth/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+<> 2024-01-20T095342.200.json
+
+###
+
+GET https://ijhttp-examples.jetbrains.com/headers
+Authorization: Bearer null
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T095321.200.json
+
+###
+
+GET https://ijhttp-examples.jetbrains.com/headers
+Authorization: Bearer null
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T095312.200.json
+
+###
+
+GET https://ijhttp-examples.jetbrains.com/headers
+Authorization: Bearer null
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T095308.200.json
+
+###
+
+GET http://localhost:8083/api/v1/weather/forecast?location=dover
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T095248.200.json
+
+###
+
+POST http://localhost:8083/api/v1/weather/auth/logout
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8083/api/v1/weather/auth/logout
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8083/api/v1/weather/auth/logout
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8083/api/v1/weather/auth/logout
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8083/api/v1/weather/auth/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+<> 2024-01-20T094912.200.json
+
+###
+
+POST http://localhost:8083/api/v1/weather/auth/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+<> 2024-01-20T094817.401.html
+
+###
+
+POST http://localhost:8083/api/v1/weather/auth/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+<> 2024-01-20T094709.401.html
+
+###
+
+POST http://localhost:8083/api/v1/weather/auth/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+<> 2024-01-20T094646.401.html
+
+###
+
+POST http://localhost:8083/api/v1/weather/auth/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+<> 2024-01-20T094603.401.html
+
+###
+
+POST http://localhost:8083/api/v1/weather/auth/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+<> 2024-01-20T094519.401.html
+
+###
+
+GET http://localhost:8083/api/v1/weather/forecast?location=dover
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T094513.401.html
+
+###
+
+GET https://ijhttp-examples.jetbrains.com/headers
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aG9yaXRpZXMiOlsiVVNFUiJdLCJpYXQiOjE3MDU3MzU3MTEsImV4cCI6MTcwNTczOTMxMX0.GKVewHx_zjhV-WiM_GJdbFX6EvEMy7txZnHccQXfPIinb0XXEIbqNJ2Gw_83DxbZ
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T094507.200.json
+
+###
+
+GET http://localhost:8083/api/v1/weather/forecast?location=dover
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T094501.401.html
+
+###
+
+POST http://localhost:8083/api/v1/weather/auth/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+<> 2024-01-20T094455.401.html
+
+###
+
+GET http://localhost:8083/api/v1/weather/forecast?location=dover
+GET http:
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T094438.400.html
+
+###
+
+GET http://localhost:8765/api/v1/weather/forecast?location=dover
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T094424.503.json
+
+###
+
+GET http://localhost:8083/api/v1/weather/forecast?location=dover
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T093154.200.json
+
+###
+
+GET https://ijhttp-examples.jetbrains.com/headers
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aG9yaXRpZXMiOlsiVVNFUiJdLCJpYXQiOjE3MDU3MzU3MTEsImV4cCI6MTcwNTczOTMxMX0.GKVewHx_zjhV-WiM_GJdbFX6EvEMy7txZnHccQXfPIinb0XXEIbqNJ2Gw_83DxbZ
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T093145.200.json
+
+###
+
+GET http://localhost:8083/api/v1/weather/forecast?location=dover
+Authorization: Bearer {{eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aG9yaXRpZXMiOlsiVVNFUiJdLCJpYXQiOjE3MDU3MzU3MTEsImV4cCI6MTcwNTczOTMxMX0.GKVewHx_zjhV-WiM_GJdbFX6EvEMy7txZnHccQXfPIinb0XXEIbqNJ2Gw_83DxbZ}}
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T093023.401.html
+
+###
+
+GET http://localhost:8083/api/v1/weather/forecast?location=dover
+Authorization: Bearer {eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aG9yaXRpZXMiOlsiVVNFUiJdLCJpYXQiOjE3MDU3MzU3MTEsImV4cCI6MTcwNTczOTMxMX0.GKVewHx_zjhV-WiM_GJdbFX6EvEMy7txZnHccQXfPIinb0XXEIbqNJ2Gw_83DxbZ}
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T093009.401.html
+
+###
+
+GET http://localhost:8083/api/v1/weather/forecast?location=dover
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aG9yaXRpZXMiOlsiVVNFUiJdLCJpYXQiOjE3MDU3MzU3MTEsImV4cCI6MTcwNTczOTMxMX0.GKVewHx_zjhV-WiM_GJdbFX6EvEMy7txZnHccQXfPIinb0XXEIbqNJ2Gw_83DxbZ
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-20T092941.401.html
+
+###
+
+POST http://localhost:8083/api/v1/weather/auth/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+<> 2024-01-20T092832.200.json
+
+###
+
 GET http://localhost:8083/api/v1/weather/forecast?location=Lansing&day=2024-11-17
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)

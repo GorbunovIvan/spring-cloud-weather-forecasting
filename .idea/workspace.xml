@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5c8e928-5e40-48b0-9191-6a6f84f3cc10" name="Changes" comment="microservice &quot;data-rest&quot; is added">
-      <change afterPath="$PROJECT_DIR$/config-repo/data-rest/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data-rest/src/test/java/org/example/datarest/controller/converter/LocationConverterTest.java" afterDir="false" />
+    <list default="true" id="b5c8e928-5e40-48b0-9191-6a6f84f3cc10" name="Changes" comment="jwt-security is added to the &quot;data-rest&quot; microservice">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-repo/api-gateway/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/api-gateway/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data-rest/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-rest/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data-rest/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data-rest/src/test/java/org/example/datarest/controller/ForecastControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-rest/src/test/java/org/example/datarest/controller/ForecastControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-rest/src/test/java/org/example/datarest/service/WeatherServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-rest/src/test/java/org/example/datarest/service/WeatherServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-rest/src/test/resources/application1.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data-rest/src/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-rest/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data-rest/src/test/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -46,6 +40,11 @@
     <option name="RECENT_COMMON_BRANCH" value="master" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/requests-with-authorization.http" environment="test" />
+    <file url="file://$USER_HOME$/AppData/Local/Temp/whats-new-dir/whats-new.http" environment="test" />
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/post-requests.http" environment="test" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -74,6 +73,11 @@
     "Application.WeatherCollectorApplication.executor": "Run",
     "Application.WeatherService.executor": "Run",
     "HTTP Request.generated-requests | #1.executor": "Run",
+    "HTTP Request.generated-requests | #2.executor": "Run",
+    "HTTP Request.generated-requests | #3.executor": "Run",
+    "HTTP Request.generated-requests | #4.executor": "Run",
+    "HTTP Request.generated-requests | #5.executor": "Run",
+    "HTTP Request.generated-requests | GET http://localhost:8765/api/v1/weather/forecast?location=dover.executor": "Run",
     "JUnit.All in data-consumer-to-db.executor": "Coverage",
     "JUnit.All in weather-collector.executor": "Coverage",
     "JUnit.ForecastControllerTest.executor": "Debug",
@@ -122,7 +126,7 @@
     "JUnit.WeatherServiceTest.testGetAverageTemperature_null.executor": "Run",
     "JUnit.WeatherServiceTest.testUpdate.executor": "Run",
     "JUnit.WeatherServiceTest.testUpdate_NonExisting.executor": "Run",
-    "JUnit.java in data-rest.executor": "Coverage",
+    "JUnit.java in data-rest.executor": "Run",
     "JUnit.org.example.dataconsumertodb in data-consumer-to-db.executor": "Coverage",
     "JUnit.org.example.dataconsumertodb.repository in data-consumer-to-db.executor": "Run",
     "Maven.spring-cloud-weather-forecasting [clean].executor": "Run",
@@ -138,7 +142,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.ApiGatewayApplication.executor": "Run",
     "Spring Boot.ConfigServerApplication.executor": "Run",
-    "Spring Boot.DataConsumerToDbApplication.executor": "Debug",
+    "Spring Boot.DataConsumerToDbApplication.executor": "Run",
     "Spring Boot.DataRestApplication.executor": "Run",
     "Spring Boot.EurekaServerApplication.executor": "Run",
     "Spring Boot.WeatherCollectorApplication.executor": "Run",
@@ -193,53 +197,33 @@
       <recent name="org.example.dataconsumertodb.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.datarest.security" />
       <recent name="org.example.dataconsumertodb.repository" />
       <recent name="org.example.dataconsumertodb.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DataRestApplication">
-    <configuration name="LocationConverterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="data-rest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.datarest.controller.converter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.datarest.controller.converter" />
-      <option name="MAIN_CLASS_NAME" value="org.example.datarest.controller.converter.LocationConverterTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="JUnit.java in data-rest">
+    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
     </configuration>
-    <configuration name="LocationConverterTest.testConvert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" requestIdentifier="#5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="ForecastControllerTest.testForecastByLocationAndDay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="data-rest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.datarest.controller.converter.*" />
+          <option name="PATTERN" value="org.example.datarest.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.datarest.controller.converter" />
-      <option name="MAIN_CLASS_NAME" value="org.example.datarest.controller.converter.LocationConverterTest" />
-      <option name="METHOD_NAME" value="testConvert" />
+      <option name="PACKAGE_NAME" value="org.example.datarest.controller" />
+      <option name="MAIN_CLASS_NAME" value="org.example.datarest.controller.ForecastControllerTest" />
+      <option name="METHOD_NAME" value="testForecastByLocationAndDay" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WeatherServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="data-rest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.datarest.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.datarest.service" />
-      <option name="MAIN_CLASS_NAME" value="org.example.datarest.service.WeatherServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -287,38 +271,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WeatherCollectorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="weather-collector" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.weathercollector.WeatherCollectorApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.weathercollector.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.LocationConverterTest" />
-      <item itemvalue="JUnit.LocationConverterTest.testConvert" />
+      <item itemvalue="HTTP Request.generated-requests | #3" />
+      <item itemvalue="HTTP Request.generated-requests | #4" />
+      <item itemvalue="HTTP Request.generated-requests | #5" />
+      <item itemvalue="JUnit.ForecastControllerTest.testForecastByLocationAndDay" />
       <item itemvalue="JUnit.java in data-rest" />
-      <item itemvalue="JUnit.WeatherServiceTest" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.DataConsumerToDbApplication" />
       <item itemvalue="Spring Boot.DataRestApplication" />
       <item itemvalue="Spring Boot.EurekaServerApplication" />
-      <item itemvalue="Spring Boot.WeatherCollectorApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.WeatherCollectorApplication" />
         <item itemvalue="JUnit.java in data-rest" />
-        <item itemvalue="JUnit.LocationConverterTest.testConvert" />
-        <item itemvalue="JUnit.LocationConverterTest" />
-        <item itemvalue="JUnit.WeatherServiceTest" />
+        <item itemvalue="JUnit.ForecastControllerTest.testForecastByLocationAndDay" />
+        <item itemvalue="HTTP Request.generated-requests | #5" />
+        <item itemvalue="HTTP Request.generated-requests | #3" />
+        <item itemvalue="HTTP Request.generated-requests | #4" />
       </list>
     </recent_temporary>
   </component>
@@ -364,6 +335,8 @@
       <workItem from="1705560707428" duration="4217000" />
       <workItem from="1705577313001" duration="5258000" />
       <workItem from="1705647428914" duration="3591000" />
+      <workItem from="1705734012782" duration="4976000" />
+      <workItem from="1705749673030" duration="1691000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -501,7 +474,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705582569396</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="jwt-security is added to the &quot;data-rest&quot; microservice">
+      <option name="closed" value="true" />
+      <created>1705750680079</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1705750680079</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,7 +509,9 @@
     <MESSAGE value="microservice &quot;weather-collector&quot; is added" />
     <MESSAGE value="microservice &quot;data-consumer-to-db&quot; is added" />
     <MESSAGE value="microservice &quot;data-rest&quot; is added" />
-    <option name="LAST_COMMIT_MESSAGE" value="microservice &quot;data-rest&quot; is added" />
+    <MESSAGE value="Merge pull request #6 from GorbunovIvan/data-rest&#10;&#10;microservice &quot;data-rest&quot; is added" />
+    <MESSAGE value="jwt-security is added to the &quot;data-rest&quot; microservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="jwt-security is added to the &quot;data-rest&quot; microservice" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/spring_cloud_weather_forecasting$WeatherServiceTest.ic" NAME="WeatherServiceTest Coverage Results" MODIFIED="1705320424595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
