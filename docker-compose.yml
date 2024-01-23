@@ -1,0 +1,98 @@
+version: "3.8"
+
+services:
+
+  #  Postgres
+  postgres-db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: spring-cloud-weather-forecasting-data-consumer-to-db
+    healthcheck:
+      # We need to pass the user and database argument (user follows "-U" param and db follows "-d" param):
+      test: ["CMD", "pg_isready", "-U", "postgres", "-d", "spring-cloud-weather-forecasting-data-consumer-to-db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  #  Kafka
+  kafka:
+    image: 'bitnami/kafka:latest'
+    environment:
+      - KAFKA_CFG_NODE_ID=0
+      - KAFKA_CFG_PROCESS_ROLES=controller,broker
+      - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092,CONTROLLER://:9093
+      - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT
+      - KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=0@kafka:9093
+      - KAFKA_CFG_CONTROLLER_LISTENER_NAMES=CONTROLLER
+      - KAFKA_CFG_MESSAGE_MAX_BYTES=100000000
+
+  config-server:
+    build:
+      context: ./config-server
+    ports:
+      - "8888:8888"
+
+  eureka-server:
+    depends_on:
+      - config-server
+    build:
+      context: ./eureka-server
+    ports:
+      - "8761:8761"
+
+  api-gateway:
+    depends_on:
+      - config-server
+      - eureka-server
+    build:
+      context: ./api-gateway
+    ports:
+      - "8765:8765"
+
+  weather-collector:
+    depends_on:
+      - config-server
+      - eureka-server
+      - api-gateway
+      - kafka
+    build:
+      context: ./weather-collector
+    ports:
+      - "8081:8081"
+
+  data-consumer-to-db:
+    depends_on:
+      - config-server
+      - eureka-server
+      - api-gateway
+      - kafka
+      - postgres-db
+    build:
+      context: ./data-consumer-to-db
+    ports:
+      - "8082:8082"
+
+  data-rest:
+    depends_on:
+      - config-server
+      - eureka-server
+      - api-gateway
+      - postgres-db
+    build:
+      context: ./data-rest
+    ports:
+      - "8083:8083"
+
+  frontend:
+    depends_on:
+      - config-server
+      - eureka-server
+      - api-gateway
+    build:
+      context: ./frontend
+    ports:
+      - "8084:8084"

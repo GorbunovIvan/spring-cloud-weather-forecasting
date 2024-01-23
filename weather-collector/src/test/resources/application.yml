@@ -6,6 +6,9 @@ eureka:
 spring:
   kafka:
     weather-topic: "test-weather-topic"
+  cloud:
+    config:
+      enabled: false
 
 parser:
   URL: http://localhost

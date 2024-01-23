@@ -8,6 +8,8 @@ spring:
     config:
       server:
         git:
-          uri: file:///D:/Java/projects/microservices/spring-cloud-weather-forecasting/config-repo
+#          uri: file:///D:/Java/projects/microservices/spring-cloud-weather-forecasting/config-repo
+          uri: file:///app/config-repo # for docker
           default-label: master
           search-paths: "{application}"
+          clone-on-start: true
