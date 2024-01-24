@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5c8e928-5e40-48b0-9191-6a6f84f3cc10" name="Changes" comment="microservice &quot;frontend&quot; is added">
-      <change afterPath="$PROJECT_DIR$/config-repo/frontend/application.yml" afterDir="false" />
+    <list default="true" id="b5c8e928-5e40-48b0-9191-6a6f84f3cc10" name="Changes" comment="dockerizing">
+      <change afterPath="$PROJECT_DIR$/data-rest/src/main/java/org/example/datarest/config/PasswordEncoderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-01-17T141853.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-repo/api-gateway/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/api-gateway/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/common/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-rest/src/main/java/org/example/datarest/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-rest/src/main/java/org/example/datarest/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-rest/src/main/java/org/example/datarest/service/security/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-rest/src/main/java/org/example/datarest/service/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-rest/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data-rest/src/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +33,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -41,7 +46,7 @@
       </map>
     </option>
     <option name="RECENT_COMMON_BRANCH" value="master" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/config-repo" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="HttpClientSelectedEnvironments">
@@ -69,122 +74,144 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.WeatherCollectorApplication.executor": "Run",
-    "Application.WeatherService.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "HTTP Request.generated-requests | #1.executor": "Run",
-    "HTTP Request.generated-requests | #2.executor": "Run",
-    "HTTP Request.generated-requests | #3.executor": "Run",
-    "HTTP Request.generated-requests | #4.executor": "Run",
-    "HTTP Request.generated-requests | #5.executor": "Run",
-    "HTTP Request.generated-requests | GET http://localhost:8765/api/v1/weather/forecast?location=dover.executor": "Run",
-    "JUnit.All in data-consumer-to-db.executor": "Coverage",
-    "JUnit.All in frontend.executor": "Coverage",
-    "JUnit.All in weather-collector.executor": "Coverage",
-    "JUnit.ForecastControllerTest.executor": "Coverage",
-    "JUnit.ForecastControllerTest.testForecastByLocationAndDay.executor": "Run",
-    "JUnit.ForecastServiceTest.executor": "Run",
-    "JUnit.ForecastServiceTest.testForecastByLocationAndDay.executor": "Debug",
-    "JUnit.ForecastServiceTest.testForecastByLocationAndDay_AlwaysUnauthorized.executor": "Run",
-    "JUnit.ForecastServiceTest.testForecastByLocationAndDay_AuthorizedButWrongToken.executor": "Run",
-    "JUnit.ForecastServiceTest.testForecastByLocationAndDay_Unauthorized.executor": "Coverage",
-    "JUnit.ForecastServiceTest.testGetAuthTokenFromRemoteService.executor": "Run",
-    "JUnit.ForecastServiceTest.testGetFromRemoteService.executor": "Run",
-    "JUnit.ForecastServiceTest.testGetFromRemoteService_EmptyHeaders.executor": "Run",
-    "JUnit.ForecastServiceTest.testPostToRemoteService.executor": "Run",
-    "JUnit.LocationConverterTest.executor": "Run",
-    "JUnit.LocationConverterTest.testConvert.executor": "Run",
-    "JUnit.LocationRepositoryCustomImplTest.executor": "Run",
-    "JUnit.LocationRepositoryCustomImplTest.testFindExisting_ExistingMixedWithNew.executor": "Run",
-    "JUnit.LocationRepositoryCustomImplTest.testFindOrSave_ExistingMixedWithNew.executor": "Run",
-    "JUnit.LocationRepositoryCustomImplTest.testFindOrSave_OnlyExisting.executor": "Run",
-    "JUnit.LocationRepositoryCustomImplTest.testFindOrSave_OnlyNew.executor": "Run",
-    "JUnit.LocationServiceTest.executor": "Run",
-    "JUnit.LocationServiceTest.testCreate.executor": "Run",
-    "JUnit.LocationServiceTest.testFindOrSave_SeveralExisting.executor": "Run",
-    "JUnit.LocationServiceTest.testFindOrSave_SeveralExistingMixedWithNew.executor": "Run",
-    "JUnit.LocationServiceTest.testFindOrSave_SeveralNew.executor": "Run",
-    "JUnit.LocationServiceTest.testFindOrSave_SingleExisting.executor": "Run",
-    "JUnit.LocationServiceTest.testFindOrSave_SingleNew.executor": "Run",
-    "JUnit.LocationServiceTest.testGetByName.executor": "Run",
-    "JUnit.WeatherConsumerTest.messageListener.executor": "Run",
-    "JUnit.WeatherConsumerTest.testMessageListener.executor": "Debug",
-    "JUnit.WeatherForDayDeserializerTest.testDeserialize.executor": "Debug",
-    "JUnit.WeatherParserTest.executor": "Run",
-    "JUnit.WeatherParserTest.testGetLocations.executor": "Run",
-    "JUnit.WeatherParserTest.testParseOk.executor": "Debug",
-    "JUnit.WeatherParserTest.testParseWeatherForDayByLocation.executor": "Run",
-    "JUnit.WeatherParserTest.testParseWeatherForDayByLocationNotFound.executor": "Run",
-    "JUnit.WeatherParserTest.testParseWeatherForDayByLocationOk.executor": "Run",
-    "JUnit.WeatherPublisherTest.executor": "Run",
-    "JUnit.WeatherPublisherTest.testPublish.executor": "Run",
-    "JUnit.WeatherRepositoryCustomImplTest.executor": "Run",
-    "JUnit.WeatherRepositoryCustomImplTest.testFindExisting.executor": "Run",
-    "JUnit.WeatherServiceTest.executor": "Run",
-    "JUnit.WeatherServiceTest.testCheckWhetherDateIsInRange.executor": "Run",
-    "JUnit.WeatherServiceTest.testCreate.executor": "Run",
-    "JUnit.WeatherServiceTest.testCreateAll.executor": "Run",
-    "JUnit.WeatherServiceTest.testCreateIfNotExisting_SeveralExisting.executor": "Run",
-    "JUnit.WeatherServiceTest.testCreateIfNotExisting_SeveralExistingMixedWithNew.executor": "Run",
-    "JUnit.WeatherServiceTest.testCreateIfNotExisting_SeveralNew.executor": "Run",
-    "JUnit.WeatherServiceTest.testCreateIfNotExisting_Single.executor": "Run",
-    "JUnit.WeatherServiceTest.testCreateIfNotExisting_SingleExisting.executor": "Run",
-    "JUnit.WeatherServiceTest.testCreateIfNotExisting_SingleNew.executor": "Run",
-    "JUnit.WeatherServiceTest.testForecastWeatherForLocationAndDay.executor": "Run",
-    "JUnit.WeatherServiceTest.testForecastWeatherForLocationAndDayBasedOnHistory.executor": "Run",
-    "JUnit.WeatherServiceTest.testGetAverageTemperature.executor": "Run",
-    "JUnit.WeatherServiceTest.testGetAverageTemperature_null.executor": "Run",
-    "JUnit.WeatherServiceTest.testUpdate.executor": "Run",
-    "JUnit.WeatherServiceTest.testUpdate_NonExisting.executor": "Run",
-    "JUnit.java in data-rest.executor": "Run",
-    "JUnit.org.example.dataconsumertodb in data-consumer-to-db.executor": "Coverage",
-    "JUnit.org.example.dataconsumertodb.repository in data-consumer-to-db.executor": "Run",
-    "Maven.spring-cloud-weather-forecasting [clean].executor": "Run",
-    "Maven.weather-collector [clean].executor": "Run",
-    "Maven.weather-collector [compile].executor": "Run",
-    "Maven.weather-collector [validate].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ApiGatewayApplication.executor": "Run",
-    "Spring Boot.ConfigServerApplication.executor": "Run",
-    "Spring Boot.DataConsumerToDbApplication.executor": "Run",
-    "Spring Boot.DataRestApplication.executor": "Run",
-    "Spring Boot.EurekaServerApplication.executor": "Run",
-    "Spring Boot.FrontendApplication.executor": "Debug",
-    "Spring Boot.WeatherCollectorApplication.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "database.data.extractors.current.export.id": "SQL Inserts",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-18",
-    "last_opened_file_path": "D:/Java/projects/microservices/spring-cloud-weather-forecasting/config-repo/frontend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.3127875",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "bigdataide_conn_settings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.WeatherCollectorApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WeatherService.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Docker.docker-compose.yml.api-gateway: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.config-server: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.data-consumer-to-db: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.data-rest: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.eureka-server: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.frontend: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.kafka: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.postgres-db: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.weather-collector: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #3.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #4.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #5.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | GET http://localhost:8765/api/v1/weather/forecast?location=dover.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in data-consumer-to-db.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.All in frontend.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.All in weather-collector.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ForecastControllerTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ForecastControllerTest.testForecastByLocationAndDay.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ForecastServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ForecastServiceTest.testForecastByLocationAndDay.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ForecastServiceTest.testForecastByLocationAndDay_AlwaysUnauthorized.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ForecastServiceTest.testForecastByLocationAndDay_AuthorizedButWrongToken.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ForecastServiceTest.testForecastByLocationAndDay_Unauthorized.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ForecastServiceTest.testGetAuthTokenFromRemoteService.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ForecastServiceTest.testGetFromRemoteService.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ForecastServiceTest.testGetFromRemoteService_EmptyHeaders.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ForecastServiceTest.testPostToRemoteService.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LocationConverterTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LocationConverterTest.testConvert.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LocationRepositoryCustomImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LocationRepositoryCustomImplTest.testFindExisting_ExistingMixedWithNew.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LocationRepositoryCustomImplTest.testFindOrSave_ExistingMixedWithNew.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LocationRepositoryCustomImplTest.testFindOrSave_OnlyExisting.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LocationRepositoryCustomImplTest.testFindOrSave_OnlyNew.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LocationServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LocationServiceTest.testCreate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LocationServiceTest.testFindOrSave_SeveralExisting.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LocationServiceTest.testFindOrSave_SeveralExistingMixedWithNew.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LocationServiceTest.testFindOrSave_SeveralNew.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LocationServiceTest.testFindOrSave_SingleExisting.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LocationServiceTest.testFindOrSave_SingleNew.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LocationServiceTest.testGetByName.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherConsumerTest.messageListener.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherConsumerTest.testMessageListener.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.WeatherForDayDeserializerTest.testDeserialize.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.WeatherParserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherParserTest.testGetLocations.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherParserTest.testParseOk.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.WeatherParserTest.testParseWeatherForDayByLocation.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherParserTest.testParseWeatherForDayByLocationNotFound.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherParserTest.testParseWeatherForDayByLocationOk.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherPublisherTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherPublisherTest.testPublish.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherRepositoryCustomImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherRepositoryCustomImplTest.testFindExisting.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherServiceTest.testCheckWhetherDateIsInRange.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherServiceTest.testCreate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherServiceTest.testCreateAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherServiceTest.testCreateIfNotExisting_SeveralExisting.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherServiceTest.testCreateIfNotExisting_SeveralExistingMixedWithNew.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherServiceTest.testCreateIfNotExisting_SeveralNew.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherServiceTest.testCreateIfNotExisting_Single.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherServiceTest.testCreateIfNotExisting_SingleExisting.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherServiceTest.testCreateIfNotExisting_SingleNew.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherServiceTest.testForecastWeatherForLocationAndDay.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherServiceTest.testForecastWeatherForLocationAndDayBasedOnHistory.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherServiceTest.testGetAverageTemperature.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherServiceTest.testGetAverageTemperature_null.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherServiceTest.testUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherServiceTest.testUpdate_NonExisting.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.java in data-rest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.org.example.dataconsumertodb in data-consumer-to-db.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.org.example.dataconsumertodb.repository in data-consumer-to-db.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.api-gateway [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.api-gateway [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.config-server [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.config-server [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.data-consumer-to-db [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.data-consumer-to-db [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.data-rest [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.data-rest [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.eureka-server [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.eureka-server [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.frontend [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.frontend [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.spring-cloud-weather-forecasting [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.weather-collector [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.weather-collector [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.weather-collector [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.weather-collector [validate].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DataConsumerToDbApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DataRestApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.FrontendApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.WeatherCollectorApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL Inserts&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/projects/microservices/spring-cloud-weather-forecasting/config-server/config-repo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3127875&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;bigdataide_conn_settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -195,16 +222,17 @@
       <recent name="org.example.weathercollector.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\config-repo\frontend" />
-      <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\frontend\src\test\resources" />
-      <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\frontend\src\main\java\org\example\frontend\controller" />
-      <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\frontend\src\main\resources\templates" />
-      <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\config-repo\data-rest" />
+      <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\config-server\config-repo" />
+      <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\config-server" />
+      <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\frontend" />
+      <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\data-rest" />
+      <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\data-consumer-to-db" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\config-repo" />
       <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\data-rest\src\main\resources\templates\" />
       <recent name="D:\Java\projects\microservices\spring-cloud-weather-forecasting\frontend\src\main\resources\templates\forecasts" />
     </key>
@@ -221,77 +249,7 @@
       <recent name="org.example.dataconsumertodb.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.FrontendApplication">
-    <configuration name="All in frontend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="frontend" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ForecastControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="frontend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.frontend.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.frontend.controller" />
-      <option name="MAIN_CLASS_NAME" value="org.example.frontend.controller.ForecastControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ForecastControllerTest.testForecastByLocationAndDay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="frontend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.frontend.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.frontend.controller" />
-      <option name="MAIN_CLASS_NAME" value="org.example.frontend.controller.ForecastControllerTest" />
-      <option name="METHOD_NAME" value="testForecastByLocationAndDay" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ForecastServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="frontend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.frontend.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.frontend.service" />
-      <option name="MAIN_CLASS_NAME" value="org.example.frontend.service.ForecastServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ForecastServiceTest.testForecastByLocationAndDay_AuthorizedButWrongToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="frontend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.frontend.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.frontend.service" />
-      <option name="MAIN_CLASS_NAME" value="org.example.frontend.service.ForecastServiceTest" />
-      <option name="METHOD_NAME" value="testForecastByLocationAndDay_AuthorizedButWrongToken" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Docker.docker-compose.yml.data-consumer-to-db: Compose Deployment">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.apigateway.ApiGatewayApplication" />
@@ -341,12 +299,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.api-gateway: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="api-gateway" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.data-consumer-to-db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="data-consumer-to-db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.data-rest: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="data-rest" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.frontend: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="frontend" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.weather-collector: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="weather-collector" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="JUnit.All in frontend" />
-      <item itemvalue="JUnit.ForecastControllerTest" />
-      <item itemvalue="JUnit.ForecastControllerTest.testForecastByLocationAndDay" />
-      <item itemvalue="JUnit.ForecastServiceTest.testForecastByLocationAndDay_AuthorizedButWrongToken" />
-      <item itemvalue="JUnit.ForecastServiceTest" />
+      <item itemvalue="Docker.docker-compose.yml.data-rest: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.frontend: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.weather-collector: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.data-consumer-to-db: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.api-gateway: Compose Deployment" />
       <item itemvalue="Spring Boot.FrontendApplication" />
       <item itemvalue="Spring Boot.WeatherCollectorApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
@@ -357,11 +386,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in frontend" />
-        <item itemvalue="JUnit.ForecastControllerTest" />
-        <item itemvalue="JUnit.ForecastControllerTest.testForecastByLocationAndDay" />
-        <item itemvalue="JUnit.ForecastServiceTest" />
-        <item itemvalue="JUnit.ForecastServiceTest.testForecastByLocationAndDay_AuthorizedButWrongToken" />
+        <item itemvalue="Docker.docker-compose.yml.data-consumer-to-db: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.weather-collector: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.frontend: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.data-rest: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.api-gateway: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -413,6 +442,10 @@
       <workItem from="1705836634794" duration="4425000" />
       <workItem from="1705906670733" duration="4600000" />
       <workItem from="1705922747004" duration="3787000" />
+      <workItem from="1705992571610" duration="4457000" />
+      <workItem from="1706009314796" duration="5072000" />
+      <workItem from="1706079459283" duration="4306000" />
+      <workItem from="1706095074011" duration="7057000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -606,7 +639,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705926036827</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="dockerizing">
+      <option name="closed" value="true" />
+      <created>1705997035831</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1705997035831</updated>
+    </task>
+    <task id="LOCAL-00026" summary="dockerizing">
+      <option name="closed" value="true" />
+      <created>1706014404074</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1706014404074</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,7 +685,9 @@
     <MESSAGE value="Merge pull request #6 from GorbunovIvan/data-rest&#10;&#10;microservice &quot;data-rest&quot; is added" />
     <MESSAGE value="jwt-security is added to the &quot;data-rest&quot; microservice" />
     <MESSAGE value="microservice &quot;frontend&quot; is added" />
-    <option name="LAST_COMMIT_MESSAGE" value="microservice &quot;frontend&quot; is added" />
+    <MESSAGE value="dockerizing&#10;init&#10;properties for frontend are added" />
+    <MESSAGE value="dockerizing" />
+    <option name="LAST_COMMIT_MESSAGE" value="dockerizing" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/spring_cloud_weather_forecasting$WeatherServiceTest.ic" NAME="WeatherServiceTest Coverage Results" MODIFIED="1705320424595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

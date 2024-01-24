@@ -2,4 +2,5 @@ spring:
   application:
     name: weather-collector
   config:
-    import: configserver:http://localhost:8888
+#    import: configserver:http://localhost:8888
+    import: configserver:http://config-server:8888 # for docker

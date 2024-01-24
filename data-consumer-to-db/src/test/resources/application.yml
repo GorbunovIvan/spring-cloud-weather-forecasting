@@ -13,6 +13,9 @@ spring:
       data-locations: classpath:data.sql
   kafka:
     weather-topic: test-weather-topic
+  cloud:
+    config:
+      enabled: false
 
 eureka:
   client:
