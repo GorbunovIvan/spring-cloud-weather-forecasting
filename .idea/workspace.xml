@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5c8e928-5e40-48b0-9191-6a6f84f3cc10" name="Changes" comment="dockerizing">
-      <change afterPath="$PROJECT_DIR$/data-rest/src/main/java/org/example/datarest/config/PasswordEncoderImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-01-17T141853.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-repo/common/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-rest/src/main/java/org/example/datarest/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-rest/src/main/java/org/example/datarest/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-rest/src/main/java/org/example/datarest/service/security/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/data-rest/src/main/java/org/example/datarest/service/security/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-rest/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data-rest/src/test/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,11 +36,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="eureka-server" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_COMMON_BRANCH" value="master" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/config-repo" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="HttpClientSelectedEnvironments">
@@ -446,6 +440,7 @@
       <workItem from="1706009314796" duration="5072000" />
       <workItem from="1706079459283" duration="4306000" />
       <workItem from="1706095074011" duration="7057000" />
+      <workItem from="1706165414759" duration="2950000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
