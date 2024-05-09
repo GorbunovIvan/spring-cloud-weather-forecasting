@@ -10,3 +10,4 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 
 # Run:
 #   'docker build -t weather-collector-image .'
+#   or 'docker build -t ivangorbunovv/spring-cloud-weather-forecasting:weather-collector .'

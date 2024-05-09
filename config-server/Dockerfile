@@ -11,3 +11,4 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 
 # Run:
 #   'docker build -t config-server-image .'
+#   or 'docker build -t ivangorbunovv/spring-cloud-weather-forecasting:config-server .'

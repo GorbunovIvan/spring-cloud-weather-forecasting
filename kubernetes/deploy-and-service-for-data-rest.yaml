@@ -1,0 +1,39 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: data-rest-deployment
+  labels:
+    app: spring-cloud-weather-forecasting-data-rest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      project: spring-cloud-weather-forecasting-data-rest
+  template:
+    metadata:
+      labels:
+        project: spring-cloud-weather-forecasting-data-rest
+    spec:
+      containers:
+        - name: data-rest
+          image: ivangorbunovv/spring-cloud-weather-forecasting:data-rest
+          ports:
+            - containerPort: 8083
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: data-rest
+  labels:
+     env  : dev
+     owner: IvanGorbunov
+spec:
+  selector:
+    project: spring-cloud-weather-forecasting-data-rest
+  ports:
+    - name      : data-rest-listener
+      protocol  : TCP
+      port      : 8083
+      targetPort: 8083
+  #type: CLusterIP

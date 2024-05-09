@@ -1,0 +1,39 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: data-consumer-to-db-deployment
+  labels:
+    app: spring-cloud-weather-forecasting-data-consumer-to-db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      project: spring-cloud-weather-forecasting-data-consumer-to-db
+  template:
+    metadata:
+      labels:
+        project: spring-cloud-weather-forecasting-data-consumer-to-db
+    spec:
+      containers:
+        - name: data-consumer-to-db
+          image: ivangorbunovv/spring-cloud-weather-forecasting:data-consumer-to-db
+          ports:
+            - containerPort: 8082
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: data-consumer-to-db
+  labels:
+     env  : dev
+     owner: IvanGorbunov
+spec:
+  selector:
+    project: spring-cloud-weather-forecasting-data-consumer-to-db
+  ports:
+    - name      : data-consumer-to-db-listener
+      protocol  : TCP
+      port      : 8082
+      targetPort: 8082
+  #type: CLusterIP

@@ -10,3 +10,4 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 
 # Run:
 #   'docker build -t data-consumer-to-db-image .'
+#   or 'docker build -t ivangorbunovv/spring-cloud-weather-forecasting:data-consumer-to-db .'

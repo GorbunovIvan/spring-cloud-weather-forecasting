@@ -4,11 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5c8e928-5e40-48b0-9191-6a6f84f3cc10" name="Changes" comment="dockerizing">
-      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" />
+    <list default="true" id="b5c8e928-5e40-48b0-9191-6a6f84f3cc10" name="Changes" comment="README.MD is changed">
+      <change afterPath="$PROJECT_DIR$/kubernetes/deploy-and-service-for-api-gateway.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/deploy-and-service-for-config-server.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/deploy-and-service-for-data-consumer-to-db.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/deploy-and-service-for-data-rest.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/deploy-and-service-for-eureka-server.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/deploy-and-service-for-frontend.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/deploy-and-service-for-kafka-1.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/deploy-and-service-for-kafka-2.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/deploy-and-service-for-kafka.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/deploy-and-service-for-postgres.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/deploy-and-service-for-weather-collector.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kubernetes/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/553430aa-0747-4ff8-835e-2ab70e5b1456.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/553430aa-0747-4ff8-835e-2ab70e5b1456.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-consumer-to-db/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/data-consumer-to-db/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-rest/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/data-rest/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-collector/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/weather-collector/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +206,7 @@
     &quot;database.data.extractors.current.export.id&quot;: &quot;SQL Inserts&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-18&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Java/projects/microservices/spring-cloud-weather-forecasting/config-server/config-repo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/projects/microservices/spring-cloud-weather-forecasting&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -391,7 +410,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-18.0.2-azul-18.0.2.1-f644763e9732-d6bd9cf6" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -441,6 +461,14 @@
       <workItem from="1706079459283" duration="4306000" />
       <workItem from="1706095074011" duration="7057000" />
       <workItem from="1706165414759" duration="2950000" />
+      <workItem from="1706169407879" duration="94000" />
+      <workItem from="1706427298068" duration="22000" />
+      <workItem from="1706428121991" duration="81000" />
+      <workItem from="1706428759984" duration="519000" />
+      <workItem from="1706442163304" duration="303000" />
+      <workItem from="1713437706634" duration="71000" />
+      <workItem from="1715147535609" duration="2027000" />
+      <workItem from="1715235774491" duration="306000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -650,7 +678,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706014404074</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="README.MD is changed">
+      <option name="closed" value="true" />
+      <created>1715147777524</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1715147777524</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -682,7 +718,9 @@
     <MESSAGE value="microservice &quot;frontend&quot; is added" />
     <MESSAGE value="dockerizing&#10;init&#10;properties for frontend are added" />
     <MESSAGE value="dockerizing" />
-    <option name="LAST_COMMIT_MESSAGE" value="dockerizing" />
+    <MESSAGE value="README.MD is added" />
+    <MESSAGE value="README.MD is changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.MD is changed" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/spring_cloud_weather_forecasting$WeatherServiceTest.ic" NAME="WeatherServiceTest Coverage Results" MODIFIED="1705320424595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

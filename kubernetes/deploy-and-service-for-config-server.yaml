@@ -1,0 +1,39 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: config-server-deployment
+  labels:
+    app: spring-cloud-weather-forecasting-config-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      project: spring-cloud-weather-forecasting-config-server
+  template:
+    metadata:
+      labels:
+        project: spring-cloud-weather-forecasting-config-server
+    spec:
+      containers:
+        - name: config-server
+          image: ivangorbunovv/spring-cloud-weather-forecasting:config-server
+          ports:
+            - containerPort: 8888
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: config-server
+  labels:
+     env  : dev
+     owner: IvanGorbunov
+spec:
+  selector:
+    project: spring-cloud-weather-forecasting-config-server
+  ports:
+    - name      : config-server-listener
+      protocol  : TCP
+      port      : 8888
+      targetPort: 8888
+  #type: CLusterIP

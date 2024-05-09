@@ -1,0 +1,39 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deployment
+  labels:
+    app: spring-cloud-weather-forecasting-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      project: spring-cloud-weather-forecasting-frontend
+  template:
+    metadata:
+      labels:
+        project: spring-cloud-weather-forecasting-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: ivangorbunovv/spring-cloud-weather-forecasting:frontend
+          ports:
+            - containerPort: 8084
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+  labels:
+     env  : dev
+     owner: IvanGorbunov
+spec:
+  selector:
+    project: spring-cloud-weather-forecasting-frontend
+  ports:
+    - name      : frontend-listener
+      protocol  : TCP
+      port      : 8084
+      targetPort: 8084
+  #type: CLusterIP
